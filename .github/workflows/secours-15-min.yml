@@ -1,0 +1,42 @@
+# Secours à 15 minutes (décision du propriétaire du 16/11/2026 au soir :
+# « Code d'abord, moi en secours »). Attribue au propriétaire une issue
+# d'Upptime encore ouverte 15 minutes après son ouverture, pour faire sonner
+# l'application GitHub de son iPhone. Script et banc : .github/secours/.
+#
+# Ce fichier n'est pas un workflow d'Upptime : la mise à jour du modèle ne
+# retire que ses huit fichiers (src/update-template.ts d'upptime/uptime-monitor,
+# « Remove our workflows (not all workflows) »).
+name: Secours 15 min
+on:
+  # L'ouverture de l'issue par le robot d'Upptime (jeton de l'application : son
+  # événement lance bien les workflows, ce que le jeton des Actions ne fait pas).
+  issues:
+    types: [opened]
+  # Filet, si l'événement manquait. Minutes décalées du début de l'heure
+  # (documentation : les lancements planifiés y sont le plus souvent retardés).
+  schedule:
+    - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
+  workflow_dispatch:
+    inputs:
+      essai:
+        description: "Essai : dire ce qui serait fait, sans rien attribuer"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  issues: write
+jobs:
+  secours:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: .github/secours
+      - name: Secours
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          ESSAI: ${{ inputs.essai }}
+        run: node .github/secours/secours.js

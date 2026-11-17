@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1836,
-    "timeDay": 1836,
-    "timeWeek": 1836,
-    "timeMonth": 1836,
-    "timeYear": 1836,
+    "time": 1850,
+    "timeDay": 1850,
+    "timeWeek": 1850,
+    "timeMonth": 1850,
+    "timeYear": 1850,
     "dailyMinutesDown": {}
   },
   {
@@ -28,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1012,
-    "timeDay": 1012,
-    "timeWeek": 1012,
-    "timeMonth": 1012,
-    "timeYear": 1012,
+    "time": 910,
+    "timeDay": 910,
+    "timeWeek": 910,
+    "timeMonth": 910,
+    "timeYear": 910,
     "dailyMinutesDown": {}
   },
   {
@@ -46,31 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 2890,
-    "timeDay": 2890,
-    "timeWeek": 2890,
-    "timeMonth": 2890,
-    "timeYear": 2890,
+    "time": 2674,
+    "timeDay": 2674,
+    "timeWeek": 2674,
+    "timeMonth": 2674,
+    "timeYear": 2674,
     "dailyMinutesDown": {}
-  },
-  {
-    "name": "Essai surveillance",
-    "url": "https://soleaxplore.be/",
-    "icon": "https://icons.duckduckgo.com/ip3/soleaxplore.be.ico",
-    "slug": "essai-surveillance",
-    "status": "up",
-    "uptime": "1.80%",
-    "uptimeDay": "1.80%",
-    "uptimeWeek": "1.80%",
-    "uptimeMonth": "1.80%",
-    "uptimeYear": "1.80%",
-    "time": 327,
-    "timeDay": 327,
-    "timeWeek": 327,
-    "timeMonth": 327,
-    "timeYear": 327,
-    "dailyMinutesDown": {
-      "2026-11-17": 21
-    }
   }
 ]

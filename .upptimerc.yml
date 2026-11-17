@@ -7,6 +7,8 @@ sites:
     url: https://soleaxplore.be/activite.html?slug=audioguide-du-colisee
   - name: Fonctions et base (catalogue-get)
     url: https://soleaxplore.be/.netlify/functions/catalogue-get?slug=audioguide-du-colisee
+  - name: Essai surveillance
+    url: https://soleaxplore.be/essai-surveillance-404
 status-website:
   baseUrl: /soleaxplore-statut
   name: SoleaXplore, état du site

@@ -1,12 +1,11 @@
 owner: cusulorenzo3-star
 repo: soleaxplore-statut
 sites:
-  - name: Accueil
-    url: https://soleaxplore.be/
-  - name: Fiche (audioguide du Colisée)
-    url: https://soleaxplore.be/activite.html?slug=audioguide-du-colisee
-  - name: Fonctions et base (catalogue-get)
-    url: https://soleaxplore.be/.netlify/functions/catalogue-get?slug=audioguide-du-colisee
+  # Une seule adresse : la fonction sante du site vérifie la base et l'accueil
+  # (4 s au plus chacune) ; 200 « SANTE_OK », sinon 503. Une panne = une issue.
+  - name: Santé du site (base et accueil)
+    url: https://soleaxplore.be/.netlify/functions/sante
+    __dangerous__body_down_if_text_missing: SANTE_OK
 status-website:
   baseUrl: /soleaxplore-statut
   name: SoleaXplore, état du site
